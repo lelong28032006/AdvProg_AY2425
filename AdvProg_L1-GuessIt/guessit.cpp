@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <bits/stdc++.h>
 #include "guessit.h"
 
 using namespace std;
-
 
 /***
     Args:
@@ -82,7 +82,7 @@ bool checkSuccess(string answer) {
 bool checkContinuePlaying(char isContinued) {
     // TODO: return result after checking player continue playing or not
     bool result = false;
-    char answer = to_lower(isContinued);
+    char answer = tolower(isContinued);
     if (isContinued == 'y' || isContinued == '1') {
       result = true;
     }
