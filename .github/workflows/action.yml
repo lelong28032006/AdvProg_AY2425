@@ -1,11 +1,14 @@
 name: Test 7 Repo
 
 on:
+  push:
+    branches: [ master, fixbugL6Painter ]
   pull_request:
     branches: [ master, fixbugL6Painter ]
     paths-ignore:
       - '.github/workflows/**'
       - '**/mainTest.cpp'
+  workflow_dispatch:  # Kích hoạt chạy tay để test nhanh
 
 jobs:
   get_changed_files:
